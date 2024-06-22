@@ -1,0 +1,270 @@
+.Stock {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: 0px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+}
+
+.StockHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    &> div {
+        background-color: $sColor;
+        padding: .7em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        width: 150px;
+        color: $lastColor;
+        font-size: 1.2em;
+        svg{
+            margin-right: .3em;
+            font-size: 1.1em;
+        }
+    }
+    a {
+        background-color: $sColor;
+        padding: .5em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        width: 150px;
+        color: $lastColor;
+        text-decoration: none;
+        font-size: 1.2em;
+        transition: background-color .3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg{
+          font-size: 1.3em;
+          margin-right: .2em;
+        }
+        &:hover {
+            color: $sColor;
+            background-color: $lastColor;
+        }
+    }
+}
+
+.StockHolder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;    
+    table {
+        width: 100%;
+        max-width: 1050px;
+        border-radius: 20px;
+        border-collapse: collapse;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      }
+      
+      th,
+      td {
+        padding: 15px;
+        background-color: $sColor;
+        color: #fff;
+      }
+      td{
+        input{
+            width: 90px;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+            padding: .5em;
+        }
+        button{
+            background-color: $mainColor;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            padding: 1em 2em;
+            margin: 0 .2em;
+            font-size: .7em;
+            cursor: pointer;
+
+        }
+      }
+      th {
+        text-align: left;
+      }
+      
+      thead {
+        th {
+          background-color:$lastColor;
+          color: $sColor;
+        }
+      }
+      
+      tbody {
+        tr {
+          &:hover {
+            background-color: rgba(255,255,255,0.3);
+          }
+        }
+        td {
+          position: relative;
+          &:hover {
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: -9999px;
+              bottom: -9999px;
+              background-color: rgba(255,255,255,0.2);
+              z-index: -1;
+            }
+          }
+        }
+      }
+}
+
+.searchBarHolderInStock {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    border: 4px solid $sColor;
+    border-radius: 50px;
+    align-items: center;
+    display: flex;
+    padding: .6em;
+    padding-left: 1.5em;
+    padding-right: 1em;
+    overflow: hidden;
+    margin-bottom: 1em;
+    input {
+        flex-grow: 1;
+        border: none;
+        outline: none;
+    }
+    label {
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        color: $sColor;
+    }
+}
+
+.filterOptions {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    label {
+        background-color: $sColor;
+        margin: .5em;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        padding: .5em;
+        border-radius: 20px;
+        color: $mainColor;
+        justify-content: center;
+        cursor: pointer;
+        input {
+          appearance: none;
+          margin: 0;
+        } 
+        
+    }
+}
+
+
+.AddToStock {
+  width: 100%;
+  height: 100vh;
+  padding: 1em;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .stockAddHeader{
+    margin: 0 auto;
+    width: fit-content;
+    color: $lastColor;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: $sColor;
+    svg {
+      margin-right: .3em;
+      font-size: 1.2em;
+    }
+  }
+  .addToStockForm{
+    width: 100%;
+    max-width: 400px;
+    padding: 1.5em;
+    border-radius: 30px;
+    background-color: $sColor;
+    margin: 1em auto;
+    div {
+      color: $mainColor;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: .5em;
+      label{
+        margin-bottom: .2em;
+      }
+      input {
+        font-size: 1em;
+        border-radius: 10px;
+        background-color: $mainColor;
+        border: none;
+        outline: none;
+        padding: .5em;
+      }
+      textarea {
+        font-size: 1em;
+        border-radius: 10px;
+        background-color: $mainColor;
+        border: none;
+        outline: none;
+        padding: .5em
+      }
+    }
+  }
+  .navigationFromAddToStock{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      text-decoration: none;
+      background-color: $sColor;
+      color: $mainColor;
+      padding: .5em 1em;
+      border-radius: 10px;
+      margin: .5em;
+      text-transform: capitalize;
+      border: 3px solid $sColor;
+    }
+    button {
+      border: none;
+      outline: none;
+      background-color: $lastColor;
+      color: $sColor;
+      padding: .5em 1em;
+      border-radius: 10px;
+      font-size: 1em;
+      width: 100px;
+      border: 3px solid $sColor;
+      cursor: pointer;
+    }
+  }
+}

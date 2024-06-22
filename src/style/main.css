@@ -1,0 +1,2916 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+.Home {
+  width: 100%;
+  position: relative;
+}
+.Home .Hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.78)), url("https://images.unsplash.com/photo-1535379453347-1ffd615e2e08");
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.Home .Hero .NavBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: start;
+  padding: 2em;
+}
+.Home .Hero .NavBar > p {
+  color: white;
+  font-size: 2em;
+  margin: 0;
+}
+.Home .Hero .NavBar .innerNavBarMenu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  padding: 1em 1.5em;
+  margin: 0 0.5em;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+.Home .Hero .NavBar .innerNavBarMenu a:hover {
+  background-color: #f8680c;
+  color: #1e1020;
+}
+.Home .Hero .NavBar .innerNavBarMenu select {
+  outline: none;
+  border: none;
+  margin-left: 1.5em;
+  background-color: #f8680c;
+  padding: 0.5em 1em;
+  border-radius: 50px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-align: center;
+  font-size: 1em;
+  cursor: pointer;
+}
+.Home .Hero .NavBar .innerNavBarMenu select option {
+  text-align: center;
+}
+.Home .Hero .CTAHolder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Home .Hero .CTAHolder h1 {
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+}
+.Home .Hero .CTAHolder a {
+  text-decoration: none;
+  background-color: #f8680c;
+  color: #1e1020;
+  font-size: 1.3em;
+  padding: 1em;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: background-color 0.3s ease, max-width 0.3s ease;
+}
+.Home .Hero .CTAHolder a:hover {
+  background-color: #1e1020;
+  color: #f8680c;
+  max-width: 350px;
+}
+.Home .AboutUs {
+  width: 100%;
+  padding: 2em;
+  max-width: 1300px;
+  margin: 1em auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 4em;
+  margin-bottom: 3em;
+  border-radius: 10px;
+  align-items: stretch;
+}
+.Home .AboutUs img {
+  width: 100%;
+  max-width: 400px;
+  min-width: 350px;
+  border-radius: 20px;
+  filter: brightness(0.8);
+}
+.Home .AboutUs .innerAboutUsTextHolder {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+}
+.Home .AboutUs .innerAboutUsTextHolder span {
+  background-color: #f8680c;
+  z-index: -1;
+  filter: blur(80px);
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  left: -10%;
+  top: -10%;
+}
+.Home .AboutUs .innerAboutUsTextHolder #s2 {
+  bottom: -5%;
+  right: -10%;
+  left: auto;
+  top: auto;
+}
+.Home .AboutUs .innerAboutUsTextHolder h1 {
+  font-size: 4.5em;
+  color: #1e1020;
+  margin-bottom: 0.2em;
+  margin-top: 0em;
+}
+.Home .AboutUs .innerAboutUsTextHolder p {
+  color: #1e1020;
+  line-height: 2em;
+  font-size: 1.2em;
+  text-align: justify;
+  text-transform: capitalize;
+}
+.Home .ContactUs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0em;
+  background-color: #1e1020;
+  padding: 3em 1em;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.Home .ContactUs img {
+  width: 100%;
+  max-width: 600px;
+  min-width: 350px;
+  border-radius: 20px;
+  background-color: transparent;
+}
+.Home .ContactUs .inputsHolderInsideContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  background-size: cover;
+  background-position-y: 70%;
+  background-repeat: no-repeat;
+}
+.Home .ContactUs .inputsHolderInsideContact h1 {
+  color: white;
+  margin-bottom: 0.4em;
+  margin-top: 0;
+  width: 100%;
+  font-size: 2.5em;
+  text-align: left;
+}
+.Home .ContactUs .inputsHolderInsideContact > div {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.Home .ContactUs .inputsHolderInsideContact > div label {
+  color: white;
+  font-size: 1em;
+  margin-bottom: 0.2em;
+  margin-left: 0.3em;
+}
+.Home .ContactUs .inputsHolderInsideContact > div input {
+  outline: none;
+  border: none;
+  font-size: 0.8em;
+  padding: 1.5em;
+  border-radius: 15px;
+  text-transform: capitalize;
+}
+.Home .ContactUs .inputsHolderInsideContact > div textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  border-radius: 15px;
+  height: 100px;
+  padding: 1.5em;
+  font-size: 0.8em;
+  text-transform: capitalize;
+}
+.Home .ContactUs .inputsHolderInsideContact button {
+  outline: none;
+  border: none;
+  font-size: 0.9em;
+  padding: 1em;
+  border-radius: 15px;
+  width: 100%;
+  cursor: pointer;
+  max-width: 300px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+.Home .ContactUs .inputsHolderInsideContact button:hover {
+  background-color: #f8680c;
+}
+.Home .footerInHome {
+  background-color: #f8680c;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.LoginPage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1em;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.78)), url("https://images.unsplash.com/photo-1535379453347-1ffd615e2e08");
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.allFormHolder {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  padding: 1em;
+  margin-top: 1em;
+}
+.allFormHolder h1 {
+  text-align: center;
+  color: white;
+  font-size: 2.5em;
+}
+.allFormHolder form {
+  width: 100%;
+}
+.allFormHolder form > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.allFormHolder form > div input {
+  outline: none;
+  border: none;
+  padding: 1.3em;
+  border-radius: 10px;
+  font-size: 0.9em;
+}
+.allFormHolder form > div label {
+  padding-left: 0.1em;
+  padding-bottom: 0.2em;
+  color: white;
+  font-size: 1.1em;
+}
+.allFormHolder form button {
+  background-color: #f8680c;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 0.9em;
+  border-radius: 10px;
+  padding: 1.3em;
+  transition: background-color 0.3s ease;
+}
+.allFormHolder form button:hover {
+  background-color: #1e1020;
+  color: white;
+}
+.allFormHolder p {
+  text-align: center;
+  color: #f8680c;
+}
+.allFormHolder p a {
+  color: white;
+}
+
+.inputGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.inputGroup input {
+  outline: none;
+  border: none;
+  padding: 1.3em;
+  border-radius: 10px;
+  font-size: 0.9em;
+}
+.inputGroup label {
+  padding-left: 0.1em;
+  padding-bottom: 0.2em;
+  color: white;
+  font-size: 1.1em;
+}
+
+.bb {
+  text-align: center;
+  margin-top: 1em;
+  display: block;
+  color: #f8680c;
+}
+.bb a {
+  color: white;
+}
+
+.ErrorMessage {
+  color: red;
+  width: 100%;
+  text-align: center;
+  margin: 0.5em 0;
+  display: block;
+}
+
+.SignupPage {
+  justify-content: start;
+}
+
+.SignUpallFormHolder {
+  max-width: 1000px;
+  margin-top: 3em;
+}
+.SignUpallFormHolder .bothHolder {
+  width: 100%;
+  display: flex;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+@media screen and (max-width: 800px) {
+  .SignUpallFormHolder .bothHolder {
+    flex-wrap: wrap;
+  }
+}
+
+.NavBarInnerForms {
+  width: 100%;
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.NavBarInnerForms > p {
+  color: #f8680c;
+  font-size: 2em;
+  margin: 0;
+}
+.NavBarInnerForms .innerNavBarMenu a {
+  text-decoration: none;
+  background-color: white;
+  color: #1e1020;
+  font-size: 1em;
+  padding: 1em 2em;
+  margin: 0 0.5em;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+.NavBarInnerForms .innerNavBarMenu a:hover {
+  background-color: #f8680c;
+}
+
+.userDash {
+  display: flex;
+  width: 100%;
+}
+
+.UserSideBar {
+  width: 100%;
+  max-width: 300px;
+  height: 100vh;
+  background-color: #1e1020;
+  overflow: hidden;
+  padding: 0.5em;
+  position: relative;
+}
+.UserSideBar .insideSideHolderLinks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 3em;
+  padding: 0 0.5em;
+  height: 71vh;
+  overflow-y: scroll;
+  scrollbar-width: 0px;
+}
+.UserSideBar .insideSideHolderLinks::-webkit-scrollbar {
+  display: none;
+}
+.UserSideBar .insideSideHolderLinks div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.5em;
+  color: white;
+  font-size: 1.1em;
+  background-color: transparent;
+  border-radius: 0px;
+  padding: 0.7em;
+  margin-bottom: 0.3em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+.UserSideBar .insideSideHolderLinks div:hover {
+  background-color: white;
+  color: #1e1020;
+}
+.UserSideBar .insideSideHolderLinks div svg {
+  font-size: 1.5em;
+  margin-right: 0.5em;
+}
+.UserSideBar .logoutBtn {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  left: 0;
+  font-size: 1em;
+  padding: 1em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #DC3545;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.UserSideBar .logoutBtn:hover {
+  background-color: #aa0b1b;
+}
+
+.iconHolder {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0 0.5em;
+}
+.iconHolder .UsericonInSideBar {
+  background-color: #f8680c;
+  padding: 0.8em;
+  font-size: 0.9em;
+  border-radius: 10px;
+  text-transform: capitalize;
+  margin-right: 0.5em;
+}
+.iconHolder .profileImage {
+  border-radius: 10px;
+  margin-right: 0.5em;
+}
+.iconHolder .UserNameInSideBar {
+  color: white;
+  padding-left: 0.3em;
+  text-transform: capitalize;
+}
+
+.ProfilePage {
+  height: 100vh;
+  overflow-y: scroll;
+  width: 100%;
+  scrollbar-width: 0px;
+  position: relative;
+}
+.ProfilePage::-webkit-scrollbar {
+  display: none;
+}
+.ProfilePage .ProfileTitle {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  color: #f8680c;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 0.5em;
+  padding: 0.5em 1em;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1020;
+}
+.ProfilePage .ProfileTitle svg {
+  margin-right: 0.2em;
+  font-size: 1.1em;
+}
+.ProfilePage .switchBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+.ProfilePage .switchBtn > #subBtn {
+  background-color: transparent;
+  border: 3px solid #1e1020;
+  color: #1e1020;
+  transition: background-color 0.3s ease;
+}
+.ProfilePage .switchBtn > #subBtn:hover {
+  background-color: #1e1020;
+  color: white;
+}
+.ProfilePage .switchBtn button {
+  outline: none;
+  border: none;
+  background-color: #1e1020;
+  color: #f8680c;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border: 3px solid #1e1020;
+  margin: 0.5em 0.5em;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 200px;
+}
+.ProfilePage .profileInfoHolder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ProfilePage .profileInfoHolder .iconHolderInsideProfile {
+  margin-bottom: 0;
+}
+.ProfilePage .profileInfoHolder .iconHolderInsideProfile div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ProfilePage .profileInfoHolder .iconHolderInsideProfile div label img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #1e1020;
+}
+.ProfilePage .profileInfoHolder .iconHolderInsideProfile span {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8680c;
+  color: #1e1020;
+  border-radius: 50%;
+  border: 4px solid #1e1020;
+}
+.ProfilePage .profileInfoHolder label {
+  display: flex;
+  justify-content: center;
+}
+.ProfilePage .profileInfoHolder .userNameInIcon {
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+  display: block;
+  text-align: center;
+}
+.ProfilePage .profileInfoHolder .saveBtn {
+  width: 100%;
+  background-color: #1e1020;
+  color: white;
+  border: none;
+  font-size: 0.8em;
+  border-radius: 40px;
+  margin-bottom: 0.5em;
+  margin-top: 0em;
+  padding: 0.7em 1em;
+  cursor: pointer;
+}
+.ProfilePage .profileInfoHolder .textProfileData {
+  width: 100%;
+  max-width: 400px;
+}
+.ProfilePage .profileInfoHolder .textProfileData .changeEmailHolder {
+  font-size: 0.9em;
+  display: flex;
+}
+.ProfilePage .profileInfoHolder .textProfileData .changeEmailHolder input {
+  border: 0;
+  outline: 0;
+  background-color: #1e1020;
+  font-size: 1em;
+  padding: 0.7em 1em;
+  border-radius: 10px;
+  color: white;
+  margin: 0.5em;
+  flex-grow: 1;
+  text-align: center;
+}
+.ProfilePage .profileInfoHolder .textProfileData .changeEmailHolder button {
+  display: none;
+  border: 0;
+  outline: 0;
+  background-color: #1e1020;
+  font-size: 1em;
+  padding: 0.7em 1em;
+  border-radius: 10px;
+  color: white;
+  text-transform: capitalize;
+  margin: 0.5em;
+  cursor: pointer;
+}
+.ProfilePage .profileInfoHolder .textProfileData .infoDivProfile {
+  display: flex;
+}
+.ProfilePage .profileInfoHolder .textProfileData .infoDivProfile div {
+  background-color: #1e1020;
+  margin: 0.5em;
+  flex-grow: 1;
+  color: white;
+  font-size: 0.8em;
+  padding: 0.8em 1em;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ProfilePage .profileInfoHolder .textProfileData .infoDivProfile div label:nth-child(2) {
+  background-color: #f8680c;
+  flex-grow: 1;
+  text-align: center;
+  color: #1e1020;
+  margin: 0 0.3em;
+  padding: 0.2em;
+  border-radius: 10px;
+}
+.ProfilePage .profileInfoHolder .textProfileData .infoDivProfile div svg {
+  font-size: 1.2em;
+  margin-right: 0.5em;
+}
+.ProfilePage .navigationFromProfile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+.ProfilePage .navigationFromProfile a {
+  outline: none;
+  border: none;
+  background-color: #1e1020;
+  color: #f8680c;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border: 3px solid #1e1020;
+  margin: 0.5em 0.5em;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 200px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.shades {
+  width: 200px;
+  height: 200px;
+  background-color: #f8680c;
+  display: block;
+  position: fixed;
+  filter: blur(50px);
+  z-index: -2;
+}
+
+#shade1 {
+  top: -2em;
+  left: 15em;
+}
+
+#shade2 {
+  bottom: -2em;
+  right: -2em;
+}
+
+.ChnagePassword, .ChangeProfile {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.ChnagePassword .passwordChangeHolder, .ChangeProfile .passwordChangeHolder {
+  background-color: #1e1020;
+  padding: 2em;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  padding-bottom: 0.7em;
+}
+.ChnagePassword .passwordChangeHolder div, .ChangeProfile .passwordChangeHolder div {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.9em;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.ChnagePassword .passwordChangeHolder div label, .ChangeProfile .passwordChangeHolder div label {
+  color: #f8680c;
+  margin-bottom: 0.2em;
+  padding-left: 0.1em;
+}
+.ChnagePassword .passwordChangeHolder div input, .ChangeProfile .passwordChangeHolder div input {
+  outline: none;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.5em;
+  padding: 1em 1em;
+}
+.ChnagePassword .navigationFromChange, .ChangeProfile .navigationFromChange {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+.ChnagePassword .navigationFromChange a, .ChnagePassword .navigationFromChange button, .ChangeProfile .navigationFromChange a, .ChangeProfile .navigationFromChange button {
+  outline: none;
+  border: none;
+  background-color: #1e1020;
+  color: #f8680c;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border: 3px solid #1e1020;
+  margin: 0.5em 0.5em;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 200px;
+  text-decoration: none;
+  text-align: center;
+}
+.ChnagePassword .navigationFromChange button, .ChangeProfile .navigationFromChange button {
+  background-color: #f8680c;
+  color: #1e1020;
+}
+.ChnagePassword > h1, .ChangeProfile > h1 {
+  font-size: 5em;
+  margin: 0;
+  margin-top: 0.3em;
+  color: #1e1020;
+}
+
+.modifyInfosHolder {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 600px;
+  background-color: #1e1020;
+  border-radius: 10px;
+  padding: 2em 1.5em;
+  margin-top: 1em;
+}
+.modifyInfosHolder > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.modifyInfosHolder > div div {
+  width: 100%;
+  display: flex;
+  color: #f8680c;
+  margin: 0.5em;
+  align-items: center;
+  justify-content: space-between;
+}
+.modifyInfosHolder > div div input {
+  flex-grow: 1;
+  outline: none;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.8em;
+  padding: 1em 1em;
+  margin-left: 0.5em;
+  max-width: 400px;
+}
+
+.Stock {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: 0px;
+}
+.Stock::-webkit-scrollbar {
+  display: none;
+}
+
+.StockHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+.StockHeader > div {
+  background-color: #1e1020;
+  padding: 0.7em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 150px;
+  color: #f8680c;
+  font-size: 1.2em;
+}
+.StockHeader > div svg {
+  margin-right: 0.3em;
+  font-size: 1.1em;
+}
+.StockHeader a {
+  background-color: #1e1020;
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 150px;
+  color: #f8680c;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.StockHeader a svg {
+  font-size: 1.3em;
+  margin-right: 0.2em;
+}
+.StockHeader a:hover {
+  color: #1e1020;
+  background-color: #f8680c;
+}
+
+.StockHolder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em;
+}
+.StockHolder table {
+  width: 100%;
+  max-width: 1050px;
+  border-radius: 20px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.StockHolder th,
+.StockHolder td {
+  padding: 15px;
+  background-color: #1e1020;
+  color: #fff;
+}
+.StockHolder td input {
+  width: 90px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5em;
+}
+.StockHolder td button {
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 1em 2em;
+  margin: 0 0.2em;
+  font-size: 0.7em;
+  cursor: pointer;
+}
+.StockHolder th {
+  text-align: left;
+}
+.StockHolder thead th {
+  background-color: #f8680c;
+  color: #1e1020;
+}
+.StockHolder tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.StockHolder tbody td {
+  position: relative;
+}
+.StockHolder tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+.searchBarHolderInStock {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  border: 4px solid #1e1020;
+  border-radius: 50px;
+  align-items: center;
+  display: flex;
+  padding: 0.6em;
+  padding-left: 1.5em;
+  padding-right: 1em;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+.searchBarHolderInStock input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+.searchBarHolderInStock label {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  color: #1e1020;
+}
+
+.filterOptions {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+.filterOptions label {
+  background-color: #1e1020;
+  margin: 0.5em;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  border-radius: 20px;
+  color: white;
+  justify-content: center;
+  cursor: pointer;
+}
+.filterOptions label input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+
+.AddToStock {
+  width: 100%;
+  height: 100vh;
+  padding: 1em;
+  overflow-y: scroll;
+}
+.AddToStock::-webkit-scrollbar {
+  display: none;
+}
+.AddToStock .stockAddHeader {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #f8680c;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #1e1020;
+}
+.AddToStock .stockAddHeader svg {
+  margin-right: 0.3em;
+  font-size: 1.2em;
+}
+.AddToStock .addToStockForm {
+  width: 100%;
+  max-width: 400px;
+  padding: 1.5em;
+  border-radius: 30px;
+  background-color: #1e1020;
+  margin: 1em auto;
+}
+.AddToStock .addToStockForm div {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+}
+.AddToStock .addToStockForm div label {
+  margin-bottom: 0.2em;
+}
+.AddToStock .addToStockForm div input {
+  font-size: 1em;
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 0.5em;
+}
+.AddToStock .addToStockForm div textarea {
+  font-size: 1em;
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 0.5em;
+}
+.AddToStock .navigationFromAddToStock {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AddToStock .navigationFromAddToStock a {
+  text-decoration: none;
+  background-color: #1e1020;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  margin: 0.5em;
+  text-transform: capitalize;
+  border: 3px solid #1e1020;
+}
+.AddToStock .navigationFromAddToStock button {
+  border: none;
+  outline: none;
+  background-color: #f8680c;
+  color: #1e1020;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  font-size: 1em;
+  width: 100px;
+  border: 3px solid #1e1020;
+  cursor: pointer;
+}
+
+.Fournisseur {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: 0px;
+}
+.Fournisseur::-webkit-scrollbar {
+  display: none;
+}
+
+.FournisseurHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+.FournisseurHeader > div {
+  background-color: #1e1020;
+  padding: 0.7em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 150px;
+  color: #f8680c;
+  font-size: 1.2em;
+}
+.FournisseurHeader > div svg {
+  margin-right: 0.3em;
+  font-size: 1.1em;
+}
+.FournisseurHeader a {
+  background-color: #1e1020;
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 150px;
+  color: #f8680c;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FournisseurHeader a svg {
+  font-size: 1.3em;
+  margin-right: 0.2em;
+}
+.FournisseurHeader a:hover {
+  color: #1e1020;
+  background-color: #f8680c;
+}
+
+.FournisseurHolder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em;
+}
+.FournisseurHolder table {
+  width: 100%;
+  max-width: 1050px;
+  border-radius: 20px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.FournisseurHolder th,
+.FournisseurHolder td {
+  padding: 15px;
+  background-color: #1e1020;
+  color: #fff;
+}
+.FournisseurHolder td input {
+  width: 90px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5em;
+}
+.FournisseurHolder td button {
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 1em 2em;
+  margin: 0 0.2em;
+  font-size: 0.7em;
+  cursor: pointer;
+}
+.FournisseurHolder th {
+  text-align: left;
+}
+.FournisseurHolder thead th {
+  background-color: #f8680c;
+  color: #1e1020;
+}
+.FournisseurHolder tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.FournisseurHolder tbody td {
+  position: relative;
+}
+.FournisseurHolder tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+.searchBarHolderInFournisseur {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  border: 4px solid #1e1020;
+  border-radius: 50px;
+  align-items: center;
+  display: flex;
+  padding: 0.6em;
+  padding-left: 1.5em;
+  padding-right: 1em;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+.searchBarHolderInFournisseur input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+.searchBarHolderInFournisseur label {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  color: #1e1020;
+}
+
+.filterOptions {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+.filterOptions label {
+  background-color: #1e1020;
+  margin: 0.5em;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  border-radius: 20px;
+  color: white;
+  justify-content: center;
+  cursor: pointer;
+}
+.filterOptions label input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+
+.AddToFournisseur {
+  width: 100%;
+  height: 100vh;
+  padding: 1em;
+  overflow-y: scroll;
+}
+.AddToFournisseur::-webkit-scrollbar {
+  display: none;
+}
+.AddToFournisseur .fournisseurAddHeader {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #f8680c;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #1e1020;
+}
+.AddToFournisseur .fournisseurAddHeader svg {
+  margin-right: 0.3em;
+  font-size: 1.2em;
+}
+.AddToFournisseur .addToFournisseurForm {
+  width: 100%;
+  max-width: 400px;
+  padding: 1.5em;
+  border-radius: 30px;
+  background-color: #1e1020;
+  margin: 1em auto;
+}
+.AddToFournisseur .addToFournisseurForm div {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+}
+.AddToFournisseur .addToFournisseurForm div label {
+  margin-bottom: 0.2em;
+}
+.AddToFournisseur .addToFournisseurForm div input {
+  font-size: 1em;
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 0.5em;
+}
+.AddToFournisseur .addToFournisseurForm div textarea {
+  font-size: 1em;
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 0.5em;
+}
+.AddToFournisseur .navigationFromAddToFournisseur {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AddToFournisseur .navigationFromAddToFournisseur a {
+  text-decoration: none;
+  background-color: #1e1020;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  margin: 0.5em;
+  text-transform: capitalize;
+  border: 3px solid #1e1020;
+}
+.AddToFournisseur .navigationFromAddToFournisseur button {
+  border: none;
+  outline: none;
+  background-color: #f8680c;
+  color: #1e1020;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  font-size: 1em;
+  width: 100px;
+  border: 3px solid #1e1020;
+  cursor: pointer;
+}
+
+.Client {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: 0px;
+}
+.Client::-webkit-scrollbar {
+  display: none;
+}
+
+.ClientHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+.ClientHeader > div {
+  background-color: #1e1020;
+  padding: 0.7em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 150px;
+  color: #f8680c;
+  font-size: 1.2em;
+}
+.ClientHeader > div svg {
+  margin-right: 0.3em;
+  font-size: 1.1em;
+}
+.ClientHeader a {
+  background-color: #1e1020;
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 150px;
+  color: #f8680c;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ClientHeader a svg {
+  font-size: 1.3em;
+  margin-right: 0.2em;
+}
+.ClientHeader a:hover {
+  color: #1e1020;
+  background-color: #f8680c;
+}
+
+.ClientHolder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em;
+}
+.ClientHolder table {
+  width: 100%;
+  max-width: 1050px;
+  border-radius: 20px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.ClientHolder th,
+.ClientHolder td {
+  padding: 15px;
+  background-color: #1e1020;
+  color: #fff;
+}
+.ClientHolder td input {
+  width: 90px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5em;
+}
+.ClientHolder td button {
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 1em 2em;
+  margin: 0 0.2em;
+  font-size: 0.7em;
+  cursor: pointer;
+}
+.ClientHolder th {
+  text-align: left;
+}
+.ClientHolder thead th {
+  background-color: #f8680c;
+  color: #1e1020;
+}
+.ClientHolder tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.ClientHolder tbody td {
+  position: relative;
+}
+.ClientHolder tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+.searchBarHolderInClient {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  border: 4px solid #1e1020;
+  border-radius: 50px;
+  align-items: center;
+  display: flex;
+  padding: 0.6em;
+  padding-left: 1.5em;
+  padding-right: 1em;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+.searchBarHolderInClient input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+.searchBarHolderInClient label {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  color: #1e1020;
+}
+
+.filterOptions {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+.filterOptions label {
+  background-color: #1e1020;
+  margin: 0.5em;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  border-radius: 20px;
+  color: white;
+  justify-content: center;
+  cursor: pointer;
+}
+.filterOptions label input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+
+.AddToClient {
+  width: 100%;
+  height: 100vh;
+  padding: 1em;
+  overflow-y: scroll;
+}
+.AddToClient::-webkit-scrollbar {
+  display: none;
+}
+.AddToClient .clientAddHeader {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #f8680c;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #1e1020;
+}
+.AddToClient .clientAddHeader svg {
+  margin-right: 0.3em;
+  font-size: 1.2em;
+}
+.AddToClient .addToClientForm {
+  width: 100%;
+  max-width: 400px;
+  padding: 1.5em;
+  border-radius: 30px;
+  background-color: #1e1020;
+  margin: 1em auto;
+}
+.AddToClient .addToClientForm div {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+}
+.AddToClient .addToClientForm div label {
+  margin-bottom: 0.2em;
+}
+.AddToClient .addToClientForm div input {
+  font-size: 1em;
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 0.5em;
+}
+.AddToClient .addToClientForm div textarea {
+  font-size: 1em;
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 0.5em;
+}
+.AddToClient .navigationFromAddToClient {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AddToClient .navigationFromAddToClient a {
+  text-decoration: none;
+  background-color: #1e1020;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  margin: 0.5em;
+  text-transform: capitalize;
+  border: 3px solid #1e1020;
+}
+.AddToClient .navigationFromAddToClient button {
+  border: none;
+  outline: none;
+  background-color: #f8680c;
+  color: #1e1020;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  font-size: 1em;
+  width: 100px;
+  border: 3px solid #1e1020;
+  cursor: pointer;
+}
+
+.Product {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: 0px;
+}
+.Product::-webkit-scrollbar {
+  display: none;
+}
+
+.ProductHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+.ProductHeader > div {
+  background-color: #1e1020;
+  padding: 0.7em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 150px;
+  color: #f8680c;
+  font-size: 1.2em;
+}
+.ProductHeader > div svg {
+  margin-right: 0.3em;
+  font-size: 1.1em;
+}
+.ProductHeader a {
+  background-color: #1e1020;
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 150px;
+  color: #f8680c;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ProductHeader a svg {
+  font-size: 1.3em;
+  margin-right: 0.2em;
+}
+.ProductHeader a:hover {
+  color: #1e1020;
+  background-color: #f8680c;
+}
+
+.ProductHolder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em;
+}
+.ProductHolder table {
+  width: 100%;
+  max-width: 1050px;
+  border-radius: 20px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.ProductHolder th,
+.ProductHolder td {
+  padding: 15px;
+  background-color: #1e1020;
+  color: #fff;
+}
+.ProductHolder td input {
+  width: 90px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5em;
+}
+.ProductHolder td button {
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 1em 2em;
+  margin: 0 0.2em;
+  font-size: 0.7em;
+  cursor: pointer;
+}
+.ProductHolder th {
+  text-align: left;
+}
+.ProductHolder thead th {
+  background-color: #f8680c;
+  color: #1e1020;
+}
+.ProductHolder tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.ProductHolder tbody td {
+  position: relative;
+}
+.ProductHolder tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+.searchBarHolderInProduct {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  border: 4px solid #1e1020;
+  border-radius: 50px;
+  align-items: center;
+  display: flex;
+  padding: 0.6em;
+  padding-left: 1.5em;
+  padding-right: 1em;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+.searchBarHolderInProduct input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+.searchBarHolderInProduct label {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  color: #1e1020;
+}
+
+.filterOptions {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+.filterOptions label {
+  background-color: #1e1020;
+  margin: 0.5em;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  border-radius: 20px;
+  color: white;
+  justify-content: center;
+  cursor: pointer;
+}
+.filterOptions label input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+
+.AddToProduct {
+  width: 100%;
+  height: 100vh;
+  padding: 1em;
+  overflow-y: scroll;
+}
+.AddToProduct::-webkit-scrollbar {
+  display: none;
+}
+.AddToProduct .productAddHeader {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #f8680c;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #1e1020;
+}
+.AddToProduct .productAddHeader svg {
+  margin-right: 0.3em;
+  font-size: 1.2em;
+}
+.AddToProduct .addToProductForm {
+  width: 100%;
+  max-width: 400px;
+  padding: 1.5em;
+  border-radius: 30px;
+  background-color: #1e1020;
+  margin: 1em auto;
+}
+.AddToProduct .addToProductForm div {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+}
+.AddToProduct .addToProductForm div label {
+  margin-bottom: 0.2em;
+}
+.AddToProduct .addToProductForm div input {
+  font-size: 1em;
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 0.5em;
+}
+.AddToProduct .addToProductForm div textarea {
+  font-size: 1em;
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 0.5em;
+}
+.AddToProduct .navigationFromAddToProduct {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AddToProduct .navigationFromAddToProduct a {
+  text-decoration: none;
+  background-color: #1e1020;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  margin: 0.5em;
+  text-transform: capitalize;
+  border: 3px solid #1e1020;
+}
+.AddToProduct .navigationFromAddToProduct button {
+  border: none;
+  outline: none;
+  background-color: #f8680c;
+  color: #1e1020;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  font-size: 1em;
+  width: 100px;
+  border: 3px solid #1e1020;
+  cursor: pointer;
+}
+
+.Help {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: 0px;
+  padding: 1em;
+}
+.Help::-webkit-scrollbar {
+  display: none;
+}
+.Help .headerInnerHelp {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.Help .headerInnerHelp label {
+  background-color: #1e1020;
+  color: #f8680c;
+  padding: 0.5em 1.5em;
+  border-radius: 10px;
+  margin: 0 0.2em;
+  text-align: center;
+}
+.Help .headerInnerHelp label:nth-child(2) {
+  flex-grow: 1;
+}
+.Help img {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 2em;
+}
+
+.formHolder {
+  width: 100%;
+  max-width: 350px;
+  background-color: #1e1020;
+  margin: 0 auto;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 10px;
+}
+.formHolder div {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0.5em;
+  flex-direction: column;
+}
+.formHolder div label {
+  color: #f8680c;
+  margin-bottom: 0.3em;
+}
+.formHolder div input, .formHolder div textarea {
+  flex-grow: 1;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 1em;
+}
+.formHolder div textarea {
+  resize: none;
+}
+.formHolder button {
+  width: 100%;
+  background-color: #f8680c;
+  outline: none;
+  border: none;
+  padding: 1em;
+  border-radius: 10px;
+  color: #1e1020;
+  cursor: pointer;
+}
+
+.Transaction {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: 0px;
+  padding: 1em;
+}
+.Transaction::-webkit-scrollbar {
+  display: none;
+}
+.Transaction .TransHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.Transaction .TransHeader label {
+  background-color: #1e1020;
+  color: #f8680c;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.Transaction .TransHeader label svg {
+  margin-right: 0.3em;
+}
+.Transaction .TransHeader > div {
+  display: flex;
+  align-items: center;
+}
+.Transaction .TransHeader > div a {
+  text-decoration: none;
+  background-color: #1e1020;
+  color: #f8680c;
+  padding: 0.5em 1em;
+  margin: 0 0.3em;
+  border-radius: 10px;
+  min-width: 120px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+.Transaction .TransHeader > div a:hover {
+  background-color: #f8680c;
+  color: #1e1020;
+}
+
+.TransHistory table {
+  width: 100%;
+  max-width: 1050px;
+  border-radius: 20px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-top: 1em;
+}
+.TransHistory th,
+.TransHistory td {
+  padding: 15px;
+  background-color: #1e1020;
+  color: #fff;
+}
+.TransHistory td input {
+  width: 90px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5em;
+}
+.TransHistory td button {
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 1em 2em;
+  margin: 0 0.2em;
+  font-size: 0.7em;
+  cursor: pointer;
+}
+.TransHistory th {
+  text-align: left;
+}
+.TransHistory thead th {
+  background-color: #f8680c;
+  color: #1e1020;
+}
+.TransHistory tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.TransHistory tbody td {
+  position: relative;
+}
+.TransHistory tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+.TransHistory .SearchContaciner {
+  width: 100%;
+  display: flex;
+  margin-top: 2em;
+  justify-content: center;
+}
+.TransHistory .SearchContaciner input {
+  padding: 0.9em 1em;
+  border-radius: 50px;
+  border: 4px solid #1e1020;
+  flex-grow: 1;
+  max-width: 800px;
+}
+.TransHistory .SearchContaciner select {
+  background-color: #1e1020;
+  outline: none;
+  border-radius: 50px;
+  color: #f8680c;
+  border: none;
+  padding: 0 1em;
+  margin: 0 0.5em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.TransHistoryHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4em;
+}
+.TransHistoryHeader .TransHistoryTableChanger {
+  display: flex;
+}
+.TransHistoryHeader .TransHistoryTableChanger button {
+  background-color: #f8680c;
+  margin: 0.5em;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  border-radius: 30px;
+  color: #1e1020;
+  justify-content: center;
+  border: none;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+.TransHistoryHeader .TransHistoryTableChanger .activeType {
+  background-color: #1e1020;
+  color: #f8680c;
+}
+
+.Sell {
+  width: 100%;
+}
+.Sell .sellAddHeader {
+  margin: 0 auto;
+  width: 200px;
+  background-color: #1e1020;
+  color: #f8680c;
+  text-align: center;
+  border-radius: 50px;
+  padding: 0.5em;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+.Sell .sellAddHeader svg {
+  font-size: 1.3em;
+  margin-right: 0.3em;
+}
+.Sell .SellForm {
+  width: 100%;
+  max-width: 500px;
+  background-color: #1e1020;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 20px;
+}
+.Sell .SellForm div {
+  display: flex;
+  margin: 0.5em 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.Sell .SellForm div label {
+  color: #f8680c;
+  margin-bottom: 0.3em;
+}
+.Sell .SellForm div input, .Sell .SellForm div textarea, .Sell .SellForm div select {
+  flex-grow: 1;
+  border-radius: 10px;
+  margin-left: 0.2em;
+  padding: 1em;
+  border: none;
+}
+.Sell .SellForm button {
+  width: 100%;
+  border-radius: 10px;
+  margin-left: 0.2em;
+  padding: 1em;
+  background-color: #f8680c;
+  outline: none;
+  color: #1e1020;
+  border: none;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.calendarPage {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+  padding: 1em;
+  scrollbar-width: 0px;
+}
+.calendarPage::-webkit-scrollbar {
+  display: none;
+}
+.calendarPage .createEventSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.calendarPage .createEventSection > h1 {
+  background-color: #f8680c;
+  padding: 0.5em 1em;
+  border-radius: 50px;
+  border: 3px solid #1e1020;
+}
+.calendarPage .createEventSection .c {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  padding: 1em;
+  border: 3px solid #1e1020;
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+.calendarPage .createEventSection > div {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+}
+.calendarPage .createEventSection > div input, .calendarPage .createEventSection > div textarea {
+  flex-grow: 1;
+  border: 3px solid #1e1020;
+  padding: 1em 1em;
+  border-radius: 10px;
+}
+.calendarPage .createEventSection > div textarea {
+  min-height: 150px;
+}
+.calendarPage .createEventSection > button {
+  width: 100%;
+  background-color: #f8680c;
+  max-width: 500px;
+  outline: none;
+  border: none;
+  padding: 1em;
+  border-radius: 10px;
+  border: 3px solid #1e1020;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 0.5em;
+}
+.calendarPage .EventsHolder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.calendarPage .EventsHolder > h1 {
+  background-color: #1e1020;
+  color: #f8680c;
+  padding: 0.5em 1em;
+  border-radius: 50px;
+  border: 3px solid #f8680c;
+}
+.calendarPage .EventsHolder .btnsHolder {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.calendarPage .EventsHolder .btnsHolder button {
+  flex-grow: 1;
+  outline: none;
+  font-size: 1em;
+  border: none;
+  background-color: #1e1020;
+  color: #f8680c;
+  padding: 0.7em 1em;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.calendarPage .EventsHolder .btnsHolder .selected {
+  background-color: #f8680c;
+  color: #1e1020;
+}
+.calendarPage .EventsHolder ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  list-style: none;
+  width: 100%;
+  max-width: 500px;
+  overflow-y: scroll;
+  min-height: 650px;
+  scrollbar-width: 0px;
+}
+.calendarPage .EventsHolder ul::-webkit-scrollbar {
+  display: none;
+}
+.calendarPage .EventsHolder ul li {
+  background-color: #1e1020;
+  margin: 0.5em 0;
+  color: white;
+  width: 100%;
+  padding: 1em;
+  border-radius: 10px;
+}
+.calendarPage .EventsHolder ul li .eventCardHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+.calendarPage .EventsHolder ul li .eventCardHeader span svg {
+  font-size: 1.5em;
+}
+.calendarPage .EventsHolder ul li h3 {
+  border-top: 1px solid white;
+  padding-top: 1.3em;
+  margin-top: 0.4em;
+  text-align: center;
+}
+.calendarPage .EventsHolder ul li .note {
+  width: 100%;
+  text-align: justify;
+  margin-bottom: 1.5em;
+  line-height: 1.5em;
+}
+.calendarPage .EventsHolder ul li .note span {
+  font-size: 1.1em;
+}
+.calendarPage .EventsHolder ul li .btnsHolder {
+  width: 100%;
+  display: flex;
+}
+.calendarPage .EventsHolder ul li .btnsHolder button {
+  flex-grow: 1;
+  background-color: #f8680c;
+  color: #1e1020;
+}
+.calendarPage .EventsHolder ul li .EventeditHolder {
+  display: flex;
+  flex-direction: column;
+}
+.calendarPage .EventsHolder ul li .EventeditHolder input, .calendarPage .EventsHolder ul li .EventeditHolder textarea {
+  outline: none;
+  border: none;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  resize: none;
+}
+.calendarPage .EventsHolder ul li .EventeditHolder textarea {
+  min-height: 150px;
+  margin-top: 0;
+}
+
+.statPage {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: 0px;
+  font-size: 0.9em;
+  padding: 1em;
+}
+.statPage::-webkit-scrollbar {
+  display: none;
+}
+.statPage .statTitle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  background-color: #1e1020;
+  color: #f8680c;
+  margin: 0;
+  border-radius: 10px;
+  padding: 0.5em;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.statPage .statTitle svg {
+  font-size: 1.2em;
+}
+.statPage .FinHolder {
+  width: 100%;
+  margin-top: 0.5em;
+}
+.statPage .FinHolder h3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  font-size: 1.4em;
+  color: #1e1020;
+}
+.statPage .FinHolder h3 svg {
+  font-size: 1.2em;
+}
+.statPage .FinHolder div {
+  width: 100%;
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.statPage .FinHolder div p {
+  overflow: hidden;
+  flex-grow: 1;
+  background-color: #f8680c;
+  display: flex;
+  flex-direction: column;
+  height: 210px;
+  font-size: 1.2em;
+  position: relative;
+  margin-top: 0;
+  padding: 1em;
+  min-width: 400px;
+  max-width: 300px;
+  border-radius: 10px;
+}
+.statPage .FinHolder div p span {
+  display: flex;
+  align-items: center;
+}
+.statPage .FinHolder div p span:nth-child(1) {
+  font-size: 1.5em;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.statPage .FinHolder div p span:nth-child(1) svg {
+  background-color: #1e1020;
+  color: white;
+  padding: 0.2em;
+  border-radius: 5px;
+  font-size: 1.7em;
+}
+.statPage .FinHolder div p span:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.9em;
+  font-size: 1.5em;
+}
+.statPage .FinHolder div p:nth-child(2) {
+  background-color: #dc3546;
+}
+.statPage .FinHolder div a {
+  text-decoration: none;
+  color: #f8680c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  background-color: #1e1020;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 0.5em;
+}
+.statPage .FinHolder > p {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: #1e1020;
+  text-transform: capitalize;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  margin-top: 0;
+  border-radius: 10px;
+  padding: 0.5em;
+  background-color: #f8680c;
+}
+.statPage .FinHolder > p svg {
+  font-size: 1.2em;
+}
+.statPage .FinHolder .losing {
+  background-color: #dc3546;
+}
+.statPage .bottomStatsHolder {
+  width: 100%;
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.statPage .bottomStatsHolder .stockStatHolder {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.statPage .bottomStatsHolder .stockStatHolder h3 {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  background-color: #1e1020;
+  width: 100%;
+  color: white;
+  margin-top: 0;
+  padding: 0.5em;
+  border-radius: 10px;
+  justify-content: center;
+}
+.statPage .bottomStatsHolder .stockStatHolder div {
+  max-width: 500px;
+  width: 100%;
+}
+.statPage .bottomStatsHolder .eventStatHolder {
+  width: 300px;
+}
+.statPage .bottomStatsHolder .eventStatHolder p {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  background-color: #f8680c;
+  border-radius: 10px;
+  padding: 0.2em;
+  text-transform: capitalize;
+}
+.statPage .bottomStatsHolder .eventStatHolder h3 {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  background-color: #1e1020;
+  max-width: 500px;
+  width: 100%;
+  color: white;
+  margin-top: 0;
+  padding: 0.5em;
+  border-radius: 10px;
+  justify-content: center;
+  margin-bottom: 0.1em;
+}
+.statPage .bottomStatsHolder .eventStatHolder .eventCardsHolder {
+  width: 100%;
+  min-height: 300px;
+  overflow-y: scroll;
+  padding: 0.5em 0;
+  scrollbar-width: 0px;
+}
+.statPage .bottomStatsHolder .eventStatHolder .eventCardsHolder::-webkit-scrollbar {
+  display: none;
+}
+.statPage .bottomStatsHolder .eventStatHolder .eventCardsHolder a {
+  text-decoration: none;
+  background-color: #1e1020;
+  color: #f8680c;
+  flex-grow: 1;
+  border-radius: 10px;
+  padding: 0.8em 0.5em;
+  display: block;
+  text-transform: capitalize;
+  text-align: center;
+  width: 100%;
+  margin: 0.5em 0;
+}
+
+.adminDash {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.stats-admin {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: 0px;
+  padding: 1em;
+}
+.stats-admin::-webkit-scrollbar {
+  display: none;
+}
+.stats-admin > h2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1020;
+  padding: 0.5em;
+  border-radius: 10px;
+  color: #f8680c;
+  margin-top: 0;
+}
+.stats-admin > h2 svg {
+  font-size: 1.5em;
+  margin-right: 0.1em;
+}
+.stats-admin .cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+}
+.stats-admin .cards-container .card {
+  flex-grow: 1;
+  border-radius: 10px;
+  padding: 1em;
+  background-color: #f8680c;
+  position: relative;
+  overflow: hidden;
+  min-height: 167px;
+  min-width: 250px;
+}
+.stats-admin .cards-container .card h3 {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+}
+.stats-admin .cards-container .card h3 svg {
+  background-color: #1e1020;
+  color: white;
+  padding: 0.3em;
+  border-radius: 5px;
+  margin-right: 0.2em;
+  width: 35px;
+  height: 35px;
+}
+.stats-admin .cards-container .card p {
+  font-size: 1.5em;
+  text-align: center;
+}
+.stats-admin .cards-container .card a, .stats-admin .cards-container .card span {
+  text-decoration: none;
+  color: #f8680c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  background-color: #1e1020;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 0.5em;
+}
+.stats-admin .cards-container .card span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.stats-admin .chart-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+.stats-admin .chart-container h4 {
+  font-size: 1.5em;
+  color: #1e1020;
+  margin-bottom: 0;
+}
+.stats-admin .chart-container canvas {
+  width: 100%;
+}
+
+.usersManagment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.usersManagment > h2 {
+  background-color: #1e1020;
+  color: #f8680c;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 30px;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  margin-bottom: 4em;
+}
+.usersManagment table {
+  width: 100%;
+  max-width: 1050px;
+  border-radius: 20px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.usersManagment th,
+.usersManagment td {
+  padding: 15px;
+  background-color: #1e1020;
+  color: #fff;
+}
+.usersManagment td input {
+  width: 90px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5em;
+}
+.usersManagment td button {
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 1em 2em;
+  margin: 0 0.2em;
+  font-size: 0.7em;
+  cursor: pointer;
+}
+.usersManagment th {
+  text-align: left;
+}
+.usersManagment thead th {
+  background-color: #f8680c;
+  color: #1e1020;
+}
+.usersManagment tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.usersManagment tbody td {
+  position: relative;
+}
+.usersManagment tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+.requests {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: 0px;
+}
+.requests::-webkit-scrollbar {
+  display: none;
+}
+.requests > h2 {
+  background-color: #1e1020;
+  color: #f8680c;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 30px;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  margin-bottom: 3em;
+  margin-top: 1em;
+}
+.requests .requestCardsHolder {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.requests .requestCardsHolder .request-card {
+  width: 100%;
+  background-color: #1e1020;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  max-width: 300px;
+  flex-grow: 1;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.requests .requestCardsHolder .request-card .email, .requests .requestCardsHolder .request-card .phone {
+  width: 100%;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.requests .requestCardsHolder .request-card .email svg, .requests .requestCardsHolder .request-card .phone svg {
+  background-color: #f8680c;
+  color: #1e1020;
+  border-radius: 5px;
+  padding: 0.3em;
+  width: 25px;
+  height: 25px;
+}
+.requests .requestCardsHolder .request-card .message, .requests .requestCardsHolder .request-card .name {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.requests .requestCardsHolder .request-card .message span, .requests .requestCardsHolder .request-card .name span {
+  width: 100%;
+  background-color: #f8680c;
+  border-radius: 5px;
+  color: #1e1020;
+  padding: 0.4em;
+  font-size: 0.9em;
+  text-align: center;
+  margin-bottom: 0.2em;
+}
+.requests .requestCardsHolder .request-card .name {
+  text-transform: capitalize;
+}
+.requests .requestCardsHolder .request-card .message span {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.requests .requestCardsHolder .request-card .message label {
+  padding: 0.5em;
+  background-color: white;
+  border-radius: 10px;
+  color: #1e1020;
+  text-align: start;
+  min-height: 100px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.requests .requestCardsHolder .request-card .status {
+  width: 150px;
+  padding: 0.3em;
+  background-color: #DC3545;
+  text-align: center;
+  margin: 1em auto;
+  border-radius: 15px;
+}
+.requests .requestCardsHolder .request-card .replayed {
+  background-color: #f8680c;
+  color: #1e1020;
+}
+.requests .requestCardsHolder .request-card .innerRequestCardBtnHolder {
+  width: 100%;
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.requests .requestCardsHolder .request-card .innerRequestCardBtnHolder button {
+  flex-grow: 1;
+  border: 0;
+  outline: none;
+  padding: 0.5em;
+  border-radius: 7px;
+  background-color: #f8680c;
+  cursor: pointer;
+}
+.requests .requestCardsHolder .request-card .innerRequestCardBtnHolder .delete-btn {
+  background-color: #DC3545;
+  color: white;
+}
+
+.admin-login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8680c;
+}
+.admin-login .innerLoginAdmin {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  background-color: white;
+  padding: 5em 2em;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.admin-login .innerLoginAdmin img {
+  width: 100%;
+  max-width: 500px;
+  padding-right: 1em;
+}
+.admin-login .innerLoginAdmin div {
+  flex-grow: 1;
+  border-left: 2px solid #1e1020;
+  margin-left: 0.5em;
+}
+.admin-login .innerLoginAdmin div form {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.admin-login .innerLoginAdmin div form label {
+  color: #1e1020;
+  margin-bottom: 0.3em;
+  padding-left: 0.2em;
+  font-size: 1.2em;
+}
+.admin-login .innerLoginAdmin div form input {
+  outline: none;
+  border: none;
+  border: 4px solid #1e1020;
+  padding: 1em;
+  border-radius: 15px;
+  margin-bottom: 1em;
+}
+.admin-login .innerLoginAdmin div form button {
+  outline: none;
+  border: none;
+  background-color: #1e1020;
+  color: #f8680c;
+  padding: 1em;
+  border-radius: 15px;
+  font-size: 1em;
+  cursor: pointer;
+}
+.admin-login .innerLoginAdmin div h2 {
+  color: #1e1020;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+}
+
+.Loader {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  background-color: #1e1020;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f8680c;
+  font-size: 2em;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,233 @@
+.Transaction {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    scrollbar-width: 0px;
+    padding: 1em;
+    .TransHeader{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+        label {
+            background-color: $sColor;
+            color: $lastColor;
+            padding: .5em 1em;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            svg{
+                margin-right: .3em;
+            }
+        }
+        &>div{
+            display: flex;
+            align-items: center;
+            a{
+                text-decoration: none;
+                background-color: $sColor;
+                color: $lastColor;
+                padding: .5em 1em;
+                margin: 0 .3em;
+                border-radius: 10px;
+                min-width: 120px;
+                text-align: center;
+                transition: background-color .3s ease;
+                &:hover {
+                    background-color: $lastColor;
+                    color: $sColor;
+                }
+            }
+        }
+    }   
+}
+
+.TransHistory{
+    table {
+        width: 100%;
+        max-width: 1050px;
+        border-radius: 20px;
+        border-collapse: collapse;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        margin-top: 1em;
+      }
+      
+      th,
+      td {
+        padding: 15px;
+        background-color: $sColor;
+        color: #fff;
+      }
+      td{
+        input{
+            width: 90px;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+            padding: .5em;
+        }
+        button{
+            background-color: $mainColor;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            padding: 1em 2em;
+            margin: 0 .2em;
+            font-size: .7em;
+            cursor: pointer;
+
+        }
+      }
+      th {
+        text-align: left;
+      }
+      
+      thead {
+        th {
+          background-color:$lastColor;
+          color: $sColor;
+        }
+      }
+      
+      tbody {
+        tr {
+          &:hover {
+            background-color: rgba(255,255,255,0.3);
+          }
+        }
+        td {
+          position: relative;
+          &:hover {
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: -9999px;
+              bottom: -9999px;
+              background-color: rgba(255,255,255,0.2);
+              z-index: -1;
+            }
+          }
+        }
+      }
+      .SearchContaciner {
+        width: 100%;
+        display: flex;
+        margin-top: 2em;
+        justify-content: center;
+        input{
+            padding: .9em 1em;
+            border-radius: 50px;
+            border: 4px solid $sColor;
+            flex-grow: 1;
+            max-width: 800px;
+        }
+        select{
+            background-color: $sColor;
+            outline: none;
+            border-radius: 50px;
+            color: $lastColor;
+            border: none;
+            padding: 0 1em;
+            margin: 0 .5em;
+            appearance: none;
+            width: 150px;
+            text-align: center;
+            cursor: pointer;
+        }
+      }
+}
+.TransHistoryHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+    .TransHistoryTableChanger {
+        display: flex;
+        button{
+            background-color: $lastColor;
+            margin: .5em;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            padding: .5em;
+            border-radius: 30px;
+            color: $sColor;
+            justify-content: center;
+            border: none;
+            font-size: 1.3em;
+            cursor: pointer;
+        }
+        .activeType {
+            background-color: $sColor;
+            color:$lastColor ;
+        }
+    }
+}
+
+
+.Sell {
+    width: 100%;
+    .sellAddHeader{
+        margin: 0 auto;
+        width: 200px;
+        background-color: $sColor;
+        color: $lastColor;
+        text-align: center;
+        border-radius: 50px;
+        padding: .5em;
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2em;
+        svg{
+            font-size: 1.3em;
+            margin-right: .3em;
+        }
+    }
+    .SellForm{
+        width: 100%;
+        max-width: 500px;
+        background-color: $sColor;
+        margin: 1em auto;
+        padding: 1em;
+        border-radius: 20px;
+        div{
+            display: flex;
+            margin: .5em 0;
+            flex-direction: column;
+            justify-content: center;
+            label{
+                color: $lastColor;
+                margin-bottom: .3em;
+            }
+            input,textarea,select{
+                flex-grow: 1;
+                border-radius: 10px;
+                margin-left: .2em;
+                padding: 1em;
+                border: none;
+            }
+            
+        }
+        button{
+            width: 100%;
+            border-radius: 10px;
+            margin-left: .2em;
+            padding: 1em;
+            background-color: $lastColor;
+            outline: none;
+            color: $sColor;
+            border: none;
+            margin-top: 1em;
+            cursor: pointer;
+        }
+    }
+}

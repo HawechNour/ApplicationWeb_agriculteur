@@ -1,0 +1,74 @@
+.Help {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: 0px;
+    padding: 1em;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    .headerInnerHelp{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        label {
+            background-color: $sColor;
+            color: $lastColor;
+            padding: .5em 1.5em;
+            border-radius: 10px;
+            margin: 0 .2em;
+            text-align: center;
+            &:nth-child(2) {
+                flex-grow: 1;
+            }
+        }
+        
+    }
+    img {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 2em;
+    }
+}
+
+.formHolder {
+    width: 100%;
+    max-width: 350px;
+    background-color:$sColor;
+    margin: 0 auto;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    div{
+        display: flex;
+        width: 100%;
+        margin-bottom: .5em;
+        flex-direction: column;
+        label{
+            color: $lastColor;
+            margin-bottom: .3em;
+        }
+        input , textarea{
+            flex-grow: 1;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            padding: 1em;
+        }
+        textarea {resize: none;}
+        
+    }
+    button{
+        width: 100%;
+        background-color: $lastColor;
+        outline: none;
+        border: none;
+        padding: 1em;
+        border-radius: 10px;
+        color: $sColor;
+        cursor: pointer;
+    }
+}

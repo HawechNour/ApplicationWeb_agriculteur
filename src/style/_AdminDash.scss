@@ -1,0 +1,381 @@
+.adminDash{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.stats-admin{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: 0px;
+    padding: 1em;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    &> h2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $sColor;
+        padding: .5em;
+        border-radius: 10px;
+        color: $lastColor;
+        margin-top: 0;
+        svg{
+            font-size: 1.5em;
+            margin-right: .1em;
+        }
+    }
+    .cards-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+        row-gap: 10px;
+        flex-wrap: wrap;
+        .card{
+            flex-grow: 1;
+            border-radius: 10px;
+            padding: 1em;
+            background-color: $lastColor;
+            position: relative;
+            overflow: hidden;
+            min-height: 167px;
+            min-width: 250px;
+
+            h3{
+                margin-top: 0;
+                display: flex;
+                align-items: center;
+                svg{
+                    background-color: $sColor;
+                    color: $mainColor;
+                    padding: .3em;
+                    border-radius: 5px;
+                    margin-right: .2em;
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+            p{
+                font-size: 1.5em;
+                text-align: center;
+            }
+            a , span{
+                text-decoration: none;
+                color: $lastColor;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                display: block;
+                width: 100%;
+                background-color: $sColor;
+                text-align: center;
+                font-size: .8em;
+                padding: .5em;
+            }
+            span{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 5px;
+            }
+        }
+    }
+
+    .chart-container{
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        position: relative;
+        
+        h4{
+            font-size: 1.5em;
+            color: $sColor;
+            margin-bottom: 0;
+        }
+        canvas{
+            width: 100%;
+        }
+    }
+}
+
+.usersManagment{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &>h2{
+        background-color: $sColor;
+        color: $lastColor;
+        width: 100%;
+        max-width: 400px;
+        border-radius: 30px;
+        padding: .5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 5px;
+        margin-bottom: 4em;
+    }
+    table {
+        width: 100%;
+        max-width: 1050px;
+        border-radius: 20px;
+        border-collapse: collapse;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      }
+      
+      th,
+      td {
+        padding: 15px;
+        background-color: $sColor;
+        color: #fff;
+      }
+      td{
+        input{
+            width: 90px;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+            padding: .5em;
+        }
+        button{
+            background-color: $mainColor;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            padding: 1em 2em;
+            margin: 0 .2em;
+            font-size: .7em;
+            cursor: pointer;
+
+        }
+      }
+      th {
+        text-align: left;
+      }
+      
+      thead {
+        th {
+          background-color:$lastColor;
+          color: $sColor;
+        }
+      }
+      
+      tbody {
+        tr {
+          &:hover {
+            background-color: rgba(255,255,255,0.3);
+          }
+        }
+        td {
+          position: relative;
+          &:hover {
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: -9999px;
+              bottom: -9999px;
+              background-color: rgba(255,255,255,0.2);
+              z-index: -1;
+            }
+          }
+        }
+      }
+}
+
+
+.requests{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: 0px;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    &>h2{
+        background-color: $sColor;
+        color: $lastColor;
+        margin: 0 auto ;
+        width: 100%;
+        max-width: 400px;
+        border-radius: 30px;
+        padding: .5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 5px;
+        margin-bottom: 3em;
+        margin-top: 1em;
+    }
+    .requestCardsHolder{
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        .request-card{
+            width: 100%;
+            background-color: $sColor;
+            padding: .5em 1em;
+            border-radius: 10px;
+            max-width: 300px;
+            flex-grow: 1;
+            color: $mainColor;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            .email , .phone{
+                width: 100%;
+                column-gap: 10px;
+                display: flex;
+                align-items: center;
+                svg{
+                    background-color: $lastColor;
+                    color: $sColor;
+                    border-radius: 5px;
+                    padding: .3em;
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+            .message , .name {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                span{
+                    width: 100%;
+                    background-color: $lastColor;
+                    border-radius: 5px;
+                    color: $sColor;
+                    padding:.4em;
+                    font-size: .9em;
+                    text-align: center;
+                    margin-bottom: .2em;
+                }
+            }
+            .name{
+                text-transform: capitalize
+            }
+            .message{
+                span{
+                    border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+                }
+                label{
+                    padding: .5em;
+                    background-color: $mainColor;
+                    border-radius: 10px;
+                    color: $sColor;
+                    text-align: start;
+                    min-height: 100px;
+                    border-top-left-radius: 0px;
+                    border-top-right-radius: 0px;
+                }
+            }
+            .status {
+                width: 150px;
+                padding: .3em;
+                background-color: #DC3545;
+                text-align: center;
+                margin: 1em auto;
+                border-radius: 15px;
+            }
+            .replayed{
+                background-color: $lastColor;
+                color: $sColor;
+            }
+            .innerRequestCardBtnHolder{
+                width: 100%;
+                display: flex;
+                column-gap: 10px;
+                button{
+                    flex-grow: 1;
+                    border: 0;
+                    outline: none;
+                    padding: .5em;
+                    border-radius: 7px;
+                    background-color: $lastColor;
+                    cursor: pointer;
+                }
+                .delete-btn{
+                    background-color: #DC3545;
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+}
+
+.admin-login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $lastColor;
+    .innerLoginAdmin{
+        width: 100%;
+        max-width: 1100px;
+        display: flex ;
+        background-color: $mainColor;
+        padding: 5em 2em;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        img{
+            width: 100%;
+            max-width: 500px;
+            padding-right: 1em;
+        }
+        div{
+            flex-grow: 1;
+            border-left: 2px solid $sColor;
+            margin-left: .5em;
+            form{
+                width: 100%;
+                margin: 0 auto;
+                max-width: 400px;
+                display: flex;
+                flex-direction: column;
+                label{
+                    color: $sColor;
+                    margin-bottom: .3em;
+                    padding-left: .2em;
+                    font-size: 1.2em;
+                }
+                input{
+                    outline: none;
+                    border: none;
+                    border: 4px solid $sColor;
+                    padding: 1em;
+                    border-radius: 15px;
+                    margin-bottom: 1em;
+                }
+                button{
+                    outline: none;
+                    border: none;
+                    background-color: $sColor;
+                    color: $lastColor;
+                    padding: 1em;
+                    border-radius: 15px;
+                    font-size: 1em;
+                    cursor: pointer;
+                }
+            }
+            h2{
+                color: $sColor;
+                margin: 0 auto;
+                text-align: center;
+                margin-bottom: 1.5em;
+                font-size: 2em;
+            }
+            
+        }
+    }
+}
